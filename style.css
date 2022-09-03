@@ -1,6 +1,2 @@
-body{
-    background-color: tomato;
-   }
-   body::after{
-    content: "Website Coming Soon!";
-   }
+body{background-color: tomato;}
+   body::after{content: "Website Coming Soon!";}
