@@ -6,6 +6,11 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+
+body{
+  background-color: dodgerblue !important;
+}
+
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #777777;
