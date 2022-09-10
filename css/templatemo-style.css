@@ -1,10 +1,51 @@
-/* 
+.header{
+	background-color: rgba(255, 255, 255, 0.945);
+	padding: 15px 50px;
+	display: flex;
+	align-items: center;
+	height: 66px;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.158);
+}
+.header-container{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+}
+.m-profile{
+	/* background-color: red; */
+	display: flex;
+	align-items: center;
+}
+.taseen-photo{
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.m-profile strong {
+	color: #123456;
+	font-size: 14px;
+}
+.m-menu{
+	display: flex;
+	/* background: aquamarine; */
+	justify-content: end;
+}
+.menu-list{
+	display: flex
+}
+.menu-item{
+	padding: 5px 20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #123456;
+	font-size: 14px;
+}
 
-Avalon Template 
-
-http://www.templatemo.com/tm-513-avalon
-
-*/
+.slider-section{
+	margin-top: 0;
+}
 
 * {
     margin: 0;
@@ -154,6 +195,37 @@ p {
 	font-style: italic;
 	font-size: 13px;
 	color: #fff;
+}
+
+.social-icons-left{
+	background-color:;
+	height: 200px;
+	position: absolute;
+	top: calc(50% - 80px);
+	left: 10px;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons li a{
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	display: inline-block;
+	line-height: 36px;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: all 0.5s;
+	color: tomato;
+	font-size: 17px;
+	margin: 5px;
+	box-shadow: 0 0 15px 0 rgba(192, 192, 192, 0.185);
+}
+.social-icons li a:hover{
+	margin-left: 15px;
+	color: #123456;
 }
 
 .right-banner-content .social-icons {
