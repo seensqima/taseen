@@ -1338,7 +1338,6 @@ footer p em {
 		.down{
 			display: none;
 		}
-
 		.social-icons-left{
 			height: 200px;
 			width: 100%;
@@ -1359,11 +1358,6 @@ footer p em {
 			align-content: center;
 		}
 
-
-		.social-icons li a:hover{
-		}
-
-
 		.cap-head{
 			font-size: 32px;
 			text-transform: uppercase;
@@ -1379,8 +1373,6 @@ footer p em {
 			padding: 0 30px;
 			text-align: center;
 		  }
-
-
 		  .menu-item{
 			padding: 5px 10px;
 			font-weight: bolder;
