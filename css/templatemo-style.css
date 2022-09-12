@@ -1,8 +1,144 @@
+
+
+.intro{
+	background-image: url("/img/introback.jpg");
+	background-color: #cccccc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.intro .overlay{
+	background-color: rgba(255, 255, 255, 0.541);
+	margin-top: 66px;
+
+	position: relative;
+
+	height: calc(100vh - 66px);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+
+
+	padding: 0;
+	z-index: 7;
+}
+
+
+
+.slider-button{
+	background-color: tomato;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 50px auto;
+	border: none;
+	padding: 8px 30px;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.199);
+	border-radius: 5px;
+  }
+  
+  .down{
+	margin: 0 !important;
+	margin-left: -20px !important;
+	position: absolute;
+	bottom: 20px;
+	height: 50px;
+	width: 50px;
+  
+	background-color: #123456;
+	color: #fff;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.199);
+	border-radius: 50%;
+  
+  
+	box-sizing: border-box;
+	border: 5px white solid;
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 3s ease-in-out infinite;
+  }
+  
+  
+  @keyframes float {
+	  0% {
+		  transform: translatey(0px);
+	  }
+	  50% {
+		  transform: translatey(-20px);
+	  }
+	  100% {
+		  transform: translatey(0px);
+	  }
+  }
+  
+  .cap-head{
+	font-size: 62px;
+	color: #123456;
+	font-weight: bolder;
+	text-transform: uppercase;
+	/* margin-top: 50px; */
+  }
+  .cap-body{
+	font-size: 21px;
+	line-height: 37px;
+	margin-top: 50px;
+	text-align: center;
+  }
+
+
+  .social-icons-left{
+	background-color:;
+	height: 200px;
+	position: absolute;
+	top: calc(50% - 80px);
+	left: 10px;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons li a{
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	display: inline-block;
+	line-height: 36px;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: all 0.5s;
+	color: #123456;
+	font-size: 17px;
+	margin: 5px;
+	box-shadow: 0 0 25px 0 rgba(109, 109, 109, 0.185);
+}
+.social-icons li a:hover{
+	margin-left: 15px;
+	color: #123456;
+}
+
+
+
+
+
+
+
+
 .header{
 	background-color: rgba(255, 255, 255, 0.945);
 	padding: 15px 50px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	height: 66px;
 	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.158);
 }
@@ -49,9 +185,6 @@
 	color: tomato;
 }
 
-.slider-section{
-	margin-top: 0;
-}
 
 * {
     margin: 0;
@@ -205,36 +338,7 @@ p {
 	color: #fff;
 }
 
-.social-icons-left{
-	background-color:;
-	height: 200px;
-	position: absolute;
-	top: calc(50% - 80px);
-	left: 10px;
-	z-index: 9;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
-.social-icons li a{
-	width: 36px;
-	height: 36px;
-	text-align: center;
-	display: inline-block;
-	line-height: 36px;
-	background-color: #fff;
-	border-radius: 50%;
-	transition: all 0.5s;
-	color: #123456;
-	font-size: 17px;
-	margin: 5px;
-	box-shadow: 0 0 25px 0 rgba(109, 109, 109, 0.185);
-}
-.social-icons li a:hover{
-	margin-left: 15px;
-	color: #123456;
-}
 
 .right-banner-content .social-icons {
 	margin-top: 40px;
@@ -1221,3 +1325,69 @@ footer p em {
 	}
 
 }
+
+/* ######################################################################################## */
+
+
+	  @media (max-width: 991.98px) {
+		.down{
+			display: none;
+		}
+
+		.social-icons-left{
+			height: 200px;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			/* top: calc(50% - 80px); */
+			top: 75%;
+			z-index: 9;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		.social-icons{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+		}
+
+
+		.social-icons li a:hover{
+		}
+
+
+		.cap-head{
+			font-size: 32px;
+			text-transform: uppercase;
+			margin: 0 30px;
+			text-align:center ;
+		  }
+		  .cap-head span{
+			background-color: red;
+		  }
+		  .cap-body{
+			font-size: 16px;
+			line-height: 26px;
+			padding: 0 30px;
+			text-align: center;
+		  }
+
+
+		  .menu-item{
+			padding: 5px 10px;
+			font-weight: bolder;
+			text-transform: uppercase;
+			color: #123456;
+			font-size: 14px;
+		}
+		  .header{
+			padding: 15px 10px;
+			align-items: center;
+			flex-direction: column;
+			justify-content: space-between;
+			align-content: center;
+			height: 100px;
+		}} 
