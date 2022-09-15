@@ -49,17 +49,19 @@
 
 
 .m-contact strong{
-	color: white;
+	color: #ffffff;
 	font-size: 14px;
 	background-color: #123456;
 	border-radius: 15px;
 	padding: 5px 10px;	
 	transition: all 300ms ease-in-out;
+	outline: 1px solid #123456;
 }
 .m-contact{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+
 }
 .m-contact a{
 	text-decoration: none;
@@ -75,12 +77,12 @@
 	padding: 5px 20px;
 	font-weight: bolder;
 	text-transform: uppercase;
-	color: white;
+	color: #123456;
 	font-size: 14px;
-	background-color: #123456;
 	margin: 5px;
 	border-radius: 15px;
 	transition: all 300ms ease-in-out;
+	outline: 1px solid #123456;
 }
 .menu-link:hover{
 	text-decoration: none !important;
@@ -228,7 +230,7 @@
 	text-align: center;
 	display: inline-block;
 	line-height: 36px;
-	background-color: rgba(255, 255, 255, 0.384);
+	background-color: rgba(255, 255, 255, 0.781);
 	border-radius: 50%;
 	transition: all 0.5s;
 	color: #123456;
