@@ -528,6 +528,29 @@
         };
     }
     </script> -->
-    <img height="200px" width="300px" src="img/logo.png" alt="">
+
+
+jQuery(window).on('scroll', function() {
+    if(jQuery(window).scrollTop() > 300) {
+        jQuery('#header_frame').css('background-color', '#FFFFFF');
+    } else {
+       jQuery('#header_frame').css('background-color', '#EFF2F4');
+    }
+});
+
+
+<!-- <script>
+    jQuery(window).on('scroll', function() {
+    if(jQuery(window).scrollTop() > 300) {
+        jQuery('.header').css('background-color', '#FFFFFF');
+    } else {
+       jQuery('.header').css('background-color', '#EFF2F4');
+    }
+});
+</script> -->
+
+
+
+
 </body>
 </html>
