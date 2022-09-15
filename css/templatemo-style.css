@@ -8,8 +8,48 @@
 	background-size: cover;
 }
 
+/* #myDIV {
+	width: 300px;
+	height: 200px;
+	background: red;
+	animation: mymove 5s infinite;
+  } */
+  
+  /* @keyframes mymove {
+	from {background-color: rgba(133, 206, 255, 0.397);}
+	to {background-color: rgba(112, 250, 204, 0.479);}
+  } */
+
+  /* @keyframes mymove {
+	0% {
+		background-color: rgba(133, 206, 255, 0.397);
+	}
+	50% {
+		background-color: rgba(112, 250, 204, 0.479);
+	}
+	100% {
+		background-color: rgba(250, 241, 112, 0.479);
+	}
+} */
+
+.css-selector {
+
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 .intro .overlay{
-	background-color: rgba(255, 255, 255, 0.425);
+    background: linear-gradient(265deg, #00ffbf25, #b702ff2f, #005eff27, #ffe60027, #ff3c002a);
+    background-size: 1000% 1000%;
+
+    animation: AnimationName 30s ease infinite;
+
+	
+	background-color: rgba(142, 255, 240, 0.479);
 	margin-top: 66px;
 
 	position: relative;
@@ -30,8 +70,8 @@
 
 
 .slider-button{
-	background-color: tomato;
-	color: #fff;
+	background-color: rgb(255, 255, 255);
+	color: #123456;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: bold;
