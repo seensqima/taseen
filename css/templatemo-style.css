@@ -1,5 +1,100 @@
 
 
+.header{
+    background: #ffffff;
+
+	padding: 15px 10px;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+	height: 66px;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.048);
+	/* background-image: url(https://github.com/seensqima/taseen/blob/main/img/introback.jpg?raw=true); */
+	border-radius: 20px;
+	margin: 10px 0 0 0;
+
+}
+.header-container{
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+}
+.m-profile{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.taseen-photo{
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	border-radius: 50%;
+	transition: all 300ms ease-in-out;
+	border: 2px solid #0b1f33;
+}
+.m-profile strong {
+	color: #123456;
+	font-size: 16px;
+	border-radius: 15px;
+	padding: 5px 0;
+	transition: all 300ms ease-in-out;
+}
+.m-profile:hover strong {
+	letter-spacing: 1px;
+}
+.m-profile:hover .taseen-photo{
+	margin-left: -10px;
+}
+
+
+.m-contact strong{
+	color: white;
+	font-size: 14px;
+	background-color: #123456;
+	border-radius: 15px;
+	padding: 5px 10px;	
+	transition: all 300ms ease-in-out;
+}
+.m-contact{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.m-contact a{
+	text-decoration: none;
+}
+.m-menu{
+	display: flex;
+	justify-content: end;
+}
+.menu-list{
+	display: flex;
+}
+.menu-item{
+	padding: 5px 20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	background-color: #123456;
+	margin: 5px;
+	border-radius: 15px;
+	transition: all 300ms ease-in-out;
+}
+.menu-link:hover{
+	text-decoration: none !important;
+}
+.menu-item:hover,.m-contact strong:hover{	
+	color: #123456;
+	background-color: white;
+	outline: 1px solid #123456;
+	padding: 5px 30px;
+}
+
+
+
+
 .intro{
 	background-image: url(https://github.com/seensqima/taseen/blob/main/img/introback.jpg?raw=true);
 
@@ -8,53 +103,26 @@
 	background-size: cover;
 }
 
-/* #myDIV {
-	width: 300px;
-	height: 200px;
-	background: red;
-	animation: mymove 5s infinite;
-  } */
-  
-  /* @keyframes mymove {
-	from {background-color: rgba(133, 206, 255, 0.397);}
-	to {background-color: rgba(112, 250, 204, 0.479);}
-  } */
-
-  /* @keyframes mymove {
-	0% {
-		background-color: rgba(133, 206, 255, 0.397);
-	}
-	50% {
-		background-color: rgba(112, 250, 204, 0.479);
-	}
-	100% {
-		background-color: rgba(250, 241, 112, 0.479);
-	}
-} */
-
-.css-selector {
-
-}
-
-@keyframes AnimationName {
+@keyframes Animation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
 
 .intro .overlay{
+
     background: linear-gradient(265deg, #005eff27, #00e1ff27, #00ffaa2a);
     background-size: 1000% 1000%;
 
-    animation: AnimationName 30s ease infinite;
+    animation: Animation 5s ease infinite;
 
 	
 	background-color: rgba(255, 255, 255, 0.479);
-	margin-top: 66px;
+	/* margin-top: 66px; */
 
 	position: relative;
 
-	height: calc(100vh - 66px);
+	height: calc(100vh - 0px);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -70,8 +138,8 @@
 
 
 .slider-button{
-	background-color: rgb(255, 255, 255);
-	color: #123456;
+	background-color: #123456;
+	color: #ffffff;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -85,19 +153,19 @@
   .slider-button:hover{
 	padding: 10px 40px;
 	margin: 48px auto;
-	box-shadow: 0 20px 15px 0 rgba(255, 1, 1, 0.199);
+	box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.199);
   }
   
   .down{
 	margin: 0 !important;
 	margin-left: -20px !important;
 	position: absolute;
-	bottom: 20px;
+	bottom: 100px;
 	height: 50px;
 	width: 50px;
   
-	background-color: #123456;
-	color: #fff;
+	background-color: #12345613;
+	color: #123456;
 	font-size: 21px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -107,7 +175,7 @@
   
   
 	box-sizing: border-box;
-	border: 5px white solid;
+	border: 5px #123456 solid;
 	overflow: hidden;
 	transform: translatey(0px);
 	animation: float 3s ease-in-out infinite;
@@ -146,7 +214,7 @@
   .social-icons-left{
 	height: 200px;
 	position: absolute;
-	top: calc(50% - 80px);
+	top: calc(80% - 80px);
 	left: 10px;
 	z-index: 9;
 	display: flex;
@@ -174,63 +242,44 @@
 }
 
 
-
-
-
-
-
-
-.header{
-	background-color: rgba(255, 255, 255, 0.842);
-	padding: 15px 50px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 66px;
-	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.158);
-}
-.header-container{
+.whatsapp-button{
 	position: fixed;
-	width: 100%;
-	z-index: 100;
-	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: 5px 10px;
+	color: white;
+	padding: 10px;
+	z-index: 9;
 }
-.m-profile{
-	/* background-color: red; */
-	display: flex;
-	align-items: center;
-}
-.taseen-photo{
-	height: 40px;
-	width: 40px;
-	margin-right: 10px;
-	border-radius: 50%;
-}
-.m-profile strong {
+.whatsapp{
+	color: white;	
+	border: none;
 	color: #123456;
-	font-size: 14px;
-}
-.m-menu{
-	display: flex;
-	/* background: aquamarine; */
-	justify-content: end;
-}
-.menu-list{
-	display: flex
-}
-.menu-item{
-	padding: 5px 20px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.178);
 	font-weight: bolder;
+	padding: 10px;		background-color: rgba(255, 255, 255, 0.767);
+	border: 2px solid #123456;
+}
+.wp-icon{
+	font-size: 30px;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	line-height: 30px;
+}
+.wp-text{
 	text-transform: uppercase;
-	color: #123456;
-	font-size: 14px;
+	border-radius: 20px;
+	padding: 5px 20px;
+	margin-right: 10px;
 }
-.menu-link:hover{
-	text-decoration: none !important;
-}
-.menu-item:hover{	
-	color: tomato;
-}
+
+
+
+
+
+
+
 
 
 * {
