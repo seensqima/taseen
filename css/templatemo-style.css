@@ -1,6 +1,5 @@
 .header {
 	background: #ffffff;
-
 	padding: 15px 10px;
 	display: flex;
 	align-items: center;
@@ -10,7 +9,6 @@
 	/* background-image: url(https://github.com/seensqima/taseen/blob/main/img/introback.jpg?raw=true); */
 	border-radius: 20px;
 	margin: 10px 0 0 0;
-
 }
 
 .header-container {
@@ -1838,18 +1836,22 @@ footer p em {
 		color: #123456;
 		font-size: 14px;
 	}
+	
+/* header start */
 
 	.header {
-		padding: 15px 10px;
-		align-items: center;
+		border-radius: 10px;
 		flex-direction: column;
-		justify-content: space-between;
-		align-content: center;
-		height: 100px;
+		height: 120px;
+	}
+	.header .m-profile{
+		margin-bottom: 10px;
 	}
 
+	.header .m-contact{display: none;}
 
 /* section 2 start */
+
 	.section-2 {
 		height: max-content;
 		padding: 50px 10px;
@@ -1859,19 +1861,19 @@ footer p em {
 	.section-2 .row {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		align-content: center;
 	}
 	.card1,
 	.card3,
 	.card4 {
-		height: max-content;
+		height: 250px;
 		padding: 30px 20px;
 		margin: 10px 0;
 	}
 	.card2 {
 		display: none;
+	}
+	.section-2 ul{
+		margin-top: 25px;
 	}
 /* section 3 start */
 	.section-3 .row .part1 {
@@ -1914,19 +1916,9 @@ footer p em {
 	
 	.job-card .text {
 		width: 90%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		/* align-items: center; */
-		align-content: center;
-		justify-items: center;
-		/* margin: 25px; */
-		transition: all 300ms ease-in-out;
 	}
 
-	.section-3 .row .job-card:hover .text span {
-		display: none;
-	}
+	.section-3 .row .job-card:hover .text span {display: none;}
 
 	.section-3 .row .cm{display: none;}
 
