@@ -204,41 +204,6 @@
 	animation: float 3s ease-in-out infinite;
 }
 
-.dwn {
-	background-color: #12345613;
-	color: white;
-	font-size: 21px;
-	font-weight: bold;
-	border: none;
-	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.199);
-	border-radius: 50%;
-	margin: 0 !important;
-	/* margin-left: -20px !important; */
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	bottom: 20px;
-	left: calc(50% - 25px);
-}
-
-.up {
-	background-color: #12345613;
-	color: white;
-	font-size: 21px;
-	font-weight: bold;
-	border: none;
-	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.199);
-	border-radius: 50%;
-	margin: 0 !important;
-	/* margin-left: -20px !important; */
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	top: 20px;
-	left: calc(50% - 25px);
-	rotate: 180deg;
-}
-
 @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -1914,11 +1879,11 @@ footer p em {
 		flex-direction: column;
 	}
 	
-	.section-3 .row .part2 {		display: flex;
+	.section-3 .row .part2 {display: flex;
 		flex-direction: column;
 	}
 	
-	.section-3 .row .part3 {		display: flex;
+	.section-3 .row .part3 {display: flex;
 		flex-direction: column;
 	}
 	.section-3 {
@@ -1931,9 +1896,9 @@ footer p em {
 	}
 
 	.section-3 .row {
-		padding: 0;
-		margin: 0;
+		padding: 20px;
 		width: 100%;
+		text-align: center;
 	}
 	.section-3 .row .job-card {
 		margin: 10px 0;
@@ -1944,6 +1909,7 @@ footer p em {
 
 	.job-card .img {
 		width: 100%;
+		height: 100%;
 	}
 	
 	.job-card .text {
@@ -1961,15 +1927,20 @@ footer p em {
 	.section-3 .row .job-card:hover .text span {
 		display: none;
 	}
-	.section-3 .row .cm{
-		display: none;
-	}
+
+	.section-3 .row .cm{display: none;}
+
 	.section-3 .row .job-card:hover .img img {
 		transform: scale(1);
 	}
 
-
-
+	.whatsapp-button {display: none;}
+	
+	.whatsapp {display: none;}
+	
+	.wp-icon {display: none;}
+	
+	.wp-text {display: none;}
 
 
 
