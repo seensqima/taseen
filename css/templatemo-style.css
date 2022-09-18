@@ -1,12 +1,9 @@
 .header {
-	background: #ffffff;
 	padding: 15px 10px;
+	background-color: white;
 	display: flex;
 	align-items: center;
-	/* justify-content: space-between; */
 	height: 66px;
-	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.048);
-	/* background-image: url(https://github.com/seensqima/taseen/blob/main/img/introback.jpg?raw=true); */
 	border-radius: 20px;
 	margin: 10px 0 0 0;
 }
@@ -14,6 +11,7 @@
 .header-container {
 	position: absolute;
 	width: 100%;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.048);
 	z-index: 100;
 	top: 0;
 }
@@ -138,7 +136,6 @@
 
 
 	background-color: rgba(255, 255, 255, 0.479);
-	/* margin-top: 66px; */
 
 	position: relative;
 
@@ -178,23 +175,16 @@
 }
 
 .down {
-	margin: 0 !important;
 	margin-left: -20px !important;
 	position: absolute;
 	bottom: 100px;
 	height: 50px;
 	width: 50px;
-
-	background-color: #12345613;
+	background-color: transparent;
 	color: #123456;
 	font-size: 21px;
-	text-transform: uppercase;
-	font-weight: bold;
-	border: none;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.199);
 	border-radius: 50%;
-
-
 	box-sizing: border-box;
 	border: 5px #123456 solid;
 	overflow: hidden;
@@ -221,8 +211,6 @@
 	color: #123456;
 	font-weight: bolder;
 	text-transform: uppercase;
-	/* margin-top: 50px; */
-	mix-blend-mode: multiply;
 	cursor: grab;
 }
 
@@ -244,7 +232,11 @@
 	align-items: center;
 	justify-content: center;
 }
-
+.social-icons-bottom {
+}
+.social-icons-bottom ul li{
+	display: inline-block;
+}
 .social-icons li a {
 	width: 36px;
 	height: 36px;
@@ -338,15 +330,12 @@
 
 .section-2 {
 	background-color: #032727;
-	height: 1000px;
-	padding: 10px;
+	height: max-content;
+	padding: 50px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
-	/* position: absolute; */
-	width: 100%;
-	/* margin-top: 100vh; */
+	width: 100vw;
 }
 
 .section-2 .heading {
@@ -790,18 +779,18 @@ p {
 
 
 
-.right-banner-content .social-icons {
+/* .right-banner-content .social-icons {
 	margin-top: 40px;
 	padding: 0;
 	list-style: none;
-}
+} */
 
-.right-banner-content .social-icons li {
+/* .right-banner-content .social-icons li {
 	display: inline-block;
 	margin: 0px 3px;
-}
+} */
 
-.right-banner-content .social-icons li a {
+/* .right-banner-content .social-icons li a {
 	width: 36px;
 	height: 36px;
 	text-align: center;
@@ -812,11 +801,11 @@ p {
 	transition: all 0.5s;
 	color: #f4bc51;
 	font-size: 17px;
-}
+} */
 
-.right-banner-content .social-icons li a:hover {
+/* .right-banner-content .social-icons li a:hover {
 	background-color: #d59b2b;
-}
+} */
 
 
 
@@ -1791,24 +1780,7 @@ footer p em {
 	}
 
 	.social-icons-left {
-		height: 200px;
-		width: 100%;
-		position: absolute;
-		bottom: 0;
-		/* top: calc(50% - 80px); */
-		top: 75%;
-		z-index: 9;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.social-icons {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		align-content: center;
+		display: none;
 	}
 
 	.cap-head {
@@ -1840,34 +1812,92 @@ footer p em {
 /* header start */
 
 	.header {
+		background-color: transparent;
 		border-radius: 10px;
 		flex-direction: column;
 		height: 120px;
+		margin: 0;
+		width: 100%;
 	}
+	.header-container {
+		background-color: transparent;
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+		top: 0;
+	}
+
 	.header .m-profile{
 		margin-bottom: 10px;
 	}
 
 	.header .m-contact{display: none;}
 
+	/* header menu start */
+	.m-menu {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.menu-list {
+		display: flex;
+	}
+	
+	.menu-item {
+		padding: 5px 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #123456;
+		font-size: 12px;
+		margin: 5px;
+		border-radius: 15px;
+		transition: all 300ms ease-in-out;
+		outline: 1px solid #123456;
+	}
+	
+	.menu-link:hover {
+		text-decoration: none !important;
+	}
+	
+	.menu-item:hover,
+	.m-contact strong:hover {
+		color: #123456;
+		background-color: white;
+		outline: 1px solid #123456;
+		padding: 5px 30px;
+	}
+
+
+	/* intro start */
+	.cap-head {
+		margin-top: 100px;
+	}
+
+/* social icon left start */
+ .social-icons-left {
+	/* display: none; */
+	
+}
+
 /* section 2 start */
 
 	.section-2 {
 		height: max-content;
-		padding: 50px 10px;
+		padding: 50px 20px;
 		flex-direction: column;
 	}
 	.section-2:has(span) > span {padding: 20px;}
 	.section-2 .row {
 		display: flex;
 		flex-direction: column;
+		padding: 50px 0;
 	}
 	.card1,
 	.card3,
 	.card4 {
 		height: 250px;
-		padding: 30px 20px;
 		margin: 10px 0;
+		width: 100vw;
 	}
 	.card2 {
 		display: none;
