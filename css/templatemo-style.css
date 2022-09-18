@@ -233,6 +233,7 @@
 	justify-content: center;
 }
 .social-icons-bottom {
+	display: none;
 }
 .social-icons-bottom ul li{
 	display: inline-block;
@@ -1782,7 +1783,9 @@ footer p em {
 	.social-icons-left {
 		display: none;
 	}
-
+	.social-icons-bottom {
+		display: block;
+	}
 	.cap-head {
 		font-size: 32px;
 		text-transform: uppercase;
