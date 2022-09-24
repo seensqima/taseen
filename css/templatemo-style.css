@@ -46,7 +46,7 @@
 }
 
 .m-contact strong {
-	color: #ffffff;
+	color: #FFD07F;
 	font-size: 14px;
 	background-color: #000000;
 	border-radius: 15px;
@@ -93,7 +93,7 @@
 
 .menu-item:hover,
 .m-contact strong:hover {
-	color: #123456;
+	color: #000000;
 	background-color: white;
 	padding: 5px 30px;
 }
@@ -108,16 +108,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .intro {
-
-	/* background: linear-gradient(265deg, #005eff27, #00e1ff27, #00ffaa2a); */
-	/* background-size: 1000% 1000%; */
-
-	/* animation: Animation 5s ease infinite; */
-
-
-	background-color: rgba(255, 255, 255, 0);
-
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -129,46 +121,62 @@
 	z-index: 7;
 }
 
-
-
 .slider-button {
+	display: inline-block;
+}
+
+.slider-button a {
+	color: black;
+	text-decoration: none;
 	background-color: #FFD07F;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: bold;
 	display: inline-block;
 	border: none;
-	padding: 8px 30px;
+	padding: 10px 30px;
 	border-radius: 5px;
 	transition: all 300ms ease;
-	margin: 20px 0;
-}
-.slider-button a{
-	color: black;
-	text-decoration: none;
-}
-.slider-button:hover {
-	/* margin: 48px auto; */
+	margin: 20px 15px 20px 0;
+	color: black;	
+	border: 1px solid #FFD07F;
 }
 
-/* .down {
-	margin-left: -20px !important;
+.slider-button a:hover {
+	/* margin: 48px auto; */
+	background-color: black;
+	color: #FFD07F;
+}
+
+
+.button li:nth-child(3) a {
+	border: 1px solid #FFD07F;
+	color: #FFD07F;
+	background-color: transparent;
+	}
+.button li:nth-child(3):hover a {
+	background-color: #000000;
+	
+}
+
+ .down {
+	/* margin-left: -20px !important; */
 	position: absolute;
-	bottom: 100px;
+	bottom: 50px;
 	height: 50px;
 	width: 50px;
 	background-color: transparent;
-	color: #123456;
+	color: #fff;
 	font-size: 21px;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.199);
 	border-radius: 50%;
 	box-sizing: border-box;
-	border: 5px #123456 solid;
+	border: 5px #010102 solid;
 	overflow: hidden;
 	transform: translatey(0px);
 	animation: float 3s ease-in-out infinite;
-} */
-/* 
+} 
+
 @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -180,9 +188,9 @@
 
 	100% {
 		transform: translatey(0px);
-	}
-} */
 
+ }
+}
 .cap-head {
 	font-size: 52px;
 	color: #FFD07F;
@@ -190,8 +198,21 @@
 	text-transform: uppercase;
 	width: 50%;
 }
-.cap-body strong{
+
+.cap-body strong {
 	color: #FFD07F;
+}
+
+.cap-head span {
+	text-decoration: none;
+}
+
+
+abbr[title],
+acronym[title] {
+	border: 0 !important;
+	outline: none !important;
+	text-decoration: unset;
 }
 
 .cap-body {
@@ -226,23 +247,24 @@
 }
 
 .social-icons li a {
-	width: 36px;
-	height: 36px;
+	width: 45px;
+	width: 40px;
 	text-align: center;
 	display: inline-block;
 	line-height: 36px;
-	background-color: rgba(255, 198, 10, 0.205);
+	background-color: #000000;
 	border-radius: 50%;
 	transition: all 0.5s;
-	color: #ffffff;
+	color: #FFD07F;
 	font-size: 17px;
 	margin: 5px;
 	box-shadow: 0 0 25px 0 rgba(109, 109, 109, 0.185);
 }
 
 .social-icons li a:hover {
-	margin-left: 15px;
-	color: #123456;
+	/* margin-left: 15px; */
+	color: #000000;
+	background-color: #FFD07F;
 }
 
 
@@ -259,12 +281,12 @@
 .whatsapp {
 	color: white;
 	border: none;
-	color: #123456;
+	color: #000000;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.178);
 	font-weight: bolder;
 	padding: 10px;
 	background-color: #FFD07F;
-	border: 2px solid #123456;
+	border: 2px solid #000000;
 }
 
 .wp-icon {
@@ -319,7 +341,7 @@
 .section-2 {
 	background-color: #032727;
 	height: max-content;
-	padding: 50px 20px;
+	padding: 100px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -345,7 +367,7 @@
 	margin: 5px;
 	color: #121212;
 	font-weight: bolder;
-	background-color: rgba(255, 255, 255, 0.699);
+	background-color: rgb(255, 255, 255);
 	padding: 5px 15px;
 	border-radius: 20px;
 	transition: all 300ms ease-in-out;
@@ -452,50 +474,28 @@
 }
 
 .section-3 {
+	text-align: center;
 	background-color: wheat;
-	/* margin-top: 100vh; */
-	height: 1000px;
+	height: max-content;
 	flex-direction: column;
 	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
 	width: 100%;
+	justify-content: center;	
+	padding: 100px 100px;
 }
 
 .section-3 .row {
-	width: 100%;
-}
-
-.section-3 .row .part1,
-.part2,
-.part3 {
 	display: flex;
-	justify-content: space-evenly;
-	align-content: center;
-}
-
-
-.section-3 .row .part1 {
-	/* background-color: indianred; */
-	padding: 10px;
-}
-
-.section-3 .row .part2 {
-	/* background-color: seagreen; */
-	padding: 10px;
-}
-
-.section-3 .row .part3 {
-	/* background-color: lightskyblue; */
-	padding: 10px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .section-3 .row .job-card {
 	background-color: #ffffffb7;
-	/* padding: 20px; */
-	width: 100%;
+	width: 30%;
 	height: 250px;
-	margin: 5px 10px;
+	margin: 20px !important;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
