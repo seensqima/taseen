@@ -834,7 +834,7 @@ abbr[title], acronym[title] {
 	justify-content: start;
 	align-items: center;
 	flex-direction: column;
-	background-image: url(/img/template/m1.png);
+	background-image: url(img/template/m1.webp);
 	background-size: cover;
 	background-position: center center;
 	height: 100%;
@@ -862,7 +862,7 @@ abbr[title], acronym[title] {
 	justify-content: start;
 	align-items: center;
 	flex-direction: column;
-	background-image: url(/img/template/m2.png);
+	background-image: url(img/template/m2.webp);
 	background-size: cover;
 	background-position: center center;
 	height: 100%;
@@ -890,7 +890,7 @@ abbr[title], acronym[title] {
 	justify-content: start;
 	align-items: center;
 	flex-direction: column;
-	background-image: url(/img/template/m3.png);
+	background-image: url(img/template/m3.webp);
 	background-size: cover;
 	background-position: center center;
 	height: 100%;
@@ -903,7 +903,7 @@ abbr[title], acronym[title] {
 
 
 .section-8{
-	background-color: rgb(90, 205, 186);
+	background-color: rgb(205, 90, 105);
 	height: 1000px;
 	display: flex;
 	justify-content: start;
@@ -919,7 +919,7 @@ abbr[title], acronym[title] {
 	justify-content: start;
 	align-items: center;
 	flex-direction: column;
-	background-image: url(/img/template/m4.png);
+	background-image: url(img/template/m4.webp);
 	background-size: cover;
 	background-position: center center;
 	height: 100%;
@@ -929,31 +929,6 @@ abbr[title], acronym[title] {
 
 
 
-
-.section-5{
-	background-color: rgb(90, 205, 186);
-	height: 1000px;
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-.section-5 .row{
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	flex-direction: column;
-	background-image: url(/img/template/m1.png);
-	background-size: cover;
-	background-position: center center;
-	height: 100%;
-	width: 100%;
-	padding-top: 50px;
-}
 
 
 
