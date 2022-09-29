@@ -1022,13 +1022,13 @@ abbr[title], acronym[title] {
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	justify-content: center;		margin-top: 50px;
+	justify-content: center;		
+	margin-top: 50px;
 	align-items: center;
 }
 
 .teamCard{
 	width: max-content;
-	background-color: rgb(255, 189, 189);
 	box-shadow: 0 0 10px silver;
 	margin: 20px;
 	border-radius: 5px;
@@ -1038,8 +1038,30 @@ abbr[title], acronym[title] {
 	flex-direction: column;
 	align-items: center;
 }
+
+.tc1{
+	background-color: #fffece;
+	color: #f1ce59;
+}
+.tc2{
+	background-color: #bdffd3;
+	color: #54e083;
+	
+}
+.tc3{
+	background-color: #bdccff;
+	color: #95aeff;
+	
+}
+.tc4{
+	color: #ff9e9e;
+	background-color: #ffcece;
+}
+
+
 .teamCard img{
 	width: 200px;
+	height: 200px;
 }
 
 .teamCard > div{
@@ -1049,7 +1071,7 @@ abbr[title], acronym[title] {
 	padding: 10px 0 0 0;
 }
 .teamCard > div span{
-	color: rgb(255, 136, 136);
+	color: #414141;
 	display: block;
 	font-weight: bold;
 }
@@ -1731,14 +1753,14 @@ body {
 
 footer {
 	height: max-content;
-	background-color: #FFD07F;
+	background-color: #000000;
 	text-align: center;
 	padding: 20px;
 }
 
 footer p {
 	font-size: 13px;
-	color: #333;
+	color: #cacaca;
 	font-weight: 500;
 	margin: 0;
 
