@@ -1692,7 +1692,9 @@ margin-right: 10px;
 
 	}
 	
-	
+	.teamCard img{
+		height: 130px;
+	}
 	
 	.section-13{
 		background-color: #333;
